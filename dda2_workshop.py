@@ -10,7 +10,7 @@ pd.set_option('display.width',1000)
 pd.set_option('display.max_colwidth',30)
 pd.set_option('display.max_rows',200)
 
-# Commented out IPython magic to ensure Python compatibility.
+
 #for tutorial data
 # %cd /content/drive/MyDrive/Cereal_Dataset/
 !ls
