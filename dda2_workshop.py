@@ -180,7 +180,7 @@ df.groupby('mfr').agg( \
 #finding the median of multiple groups
 #no need to put a , on the last line
 #sorting by median_rating (must specify which column to sort!!!!!)
-#other agg functions: 'max', 'min', 'median', 'sum', 'std', 'nunique'
+#other agg functions: 'mean', 'max', 'min', 'median', 'sum', 'std', 'nunique'
 df.groupby('mfr').agg( \
     median_rating=('rating', 'median'), \
     median_sodium=('sodium', 'median'), \
