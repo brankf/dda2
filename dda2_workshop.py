@@ -270,6 +270,9 @@ df['vitamins_w'] = df['vitamins'] * 0.3
 df['sodium_w'] = df['sodium'] * 0.1
 df['sugars_w'] = df['sugars'] * 0.1
 
+#sorting values with multiple conditions, eg:
+df.loc[(df['vitamins']==100) | (df['fat']==0), ['name', 'vitamins', 'fat']].sort_values(['vitamins', 'fat'], ascending=[False, True])
+
 """# **WEEK 4 WORKSHOP**
 - only theory part is tested as mcq, coding not tested for CT
 
